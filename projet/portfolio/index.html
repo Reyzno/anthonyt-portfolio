@@ -4,26 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <!-- 2 librairies utilisées pour les animations HTML du header -->
+    <script src='assets/vendor/TweenLite.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+
+    <script>
+        $(document).ready(function('scroll') {
+            $('.js-scrollTo').on('click', function('scroll') { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate({
+                    scrollTop: $(page).offset().top
+                }, speed); // Go
+                return false;
+            });
+        });
+    </script>
+
 </head>
 
 <body>
-    <div class="container demo">
-        <div class="content">
-            <div id="large-header" class="large-header">
-                <canvas id="demo-canvas"></canvas>
-                <h1 class="main-title2"><span class="thin2">Anthony</span> Tournier</h1>
-                <h1 class="main-title"><span class="thin">Web</span> developer</h1>
+    <header>
+        <div class="demo">
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <img src="assets/img/logo.svg" class="js-scrollto" href="page1" alt="">
+                    <h1 class="main-title2"><span class="thin2">Anthony</span> Tournier</h1>
+                    <h1 class="main-title"><span class="thin">Web</span> developer</h1>
+                </div>
             </div>
         </div>
+    </header>
+
+    <nav class="navbar navbar-inverse" id="navbar">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="navlinks"><a href="#" class="navtext">My works</a></li>
+                <li class="navlinks"><a href="#" class="navtext">Contact me</a></li>
+                <li class="navlinks"><a href="#" class="navtext">Useless</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECTION WHO IS THIS GUY -->
+
+    <div class="container">
+        <div class="row">
+            <p id="page-1">Who is this guy ?</p>
+            <hr>
+        </div>
+
     </div>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
 
-    <script src="js/index.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="person col-md-5 col-xs-12">
+                <h1>The Person</h1>
+                <p class="the-person"> Lorem ipsum sa mère qsdfpoqis erjfpqoisu</p>
+            </div>
+            <div class="person col-md-5 col-md-push-2 col-xs-12">
+                <h1>His talent</h1>
+                <p class="touched">What he touched *</p>
 
+                <!-- LES SKILL BAR -->
+
+                <div class="skills">
+                    <div class="skill-column">
+                        <div class="skill-label">HTML 5</div>
+                        <div class="skill-icons">
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill-label">CSS 3</div>
+                        <div class="skill-icons">
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill-label">Bootstrap</div>
+                        <div class="skill-icons">
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                            <span class="active-green"></span>
+                            <span class="inactive"></span>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill-label">Javascript</div>
+                        <div class="skill-icons">
+                            <span class="active-red"></span>
+                            <span class="active-red"></span>
+                            <span class="inactive"></span>
+                            <span class="inactive"></span>
+                            <span class="inactive"></span>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill-label">jQuery</div>
+                        <div class="skill-icons">
+                            <span class="active-red"></span>
+                            <span class="active-red"></span>
+                            <span class="inactive"></span>
+                            <span class="inactive"></span>
+                            <span class="inactive"></span>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill-label">PHP</div>
+                        <div class="skill-icons">
+                            <span class="active-red"></span>
+                            <span class="active-red"></span>
+                            <span class="inactive"></span>
+                            <span class="inactive"></span>
+                            <span class="inactive"></span>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill-label">MySQL</div>
+                        <div class="skill-icons">
+                            <span class="active-orange"></span>
+                            <span class="active-orange"></span>
+                            <span class="active-orange"></span>
+                            <span class="inactive"></span>
+                            <span class="inactive"></span>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill-label">Wordpress</div>
+                        <div class="skill-icons">
+                            <span class="active-orange"></span>
+                            <span class="active-orange"></span>
+                            <span class="active-orange"></span>
+                            <span class="inactive"></span>
+                            <span class="inactive"></span>
+                        </div>
+                    </div>
+                    <div class="asterix">*</div>
+                    <div class="skills-summary">
+                        <div class="skill-column-summary">
+                            <div class="skill-label-summary">A lot</div>
+                            <div class="skill-icons-summary">
+                                <span class="active-green"></span>
+                                <span class="active-green"></span>
+                                <span class="active-green"></span>
+                                <span class="active-green"></span>
+                                <span class="active-green"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-summary">
+                        <div class="skill-column-summary">
+                            <div class="skill-label-summary">Not so much</div>
+                            <div class="skill-icons-summary">
+                                <span class="active-orange"></span>
+                                <span class="active-orange"></span>
+                                <span class="active-orange"></span>
+                                <span class="inactive"></span>
+                                <span class="inactive"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-summary">
+                        <div class="skill-column-summary">
+                            <div class="skill-label-summary">It's embarassing</div>
+                            <div class="skill-icons-summary">
+                                <span class="active-red"></span>
+                                <span class="active-red"></span>
+                                <span class="inactive"></span>
+                                <span class="inactive"></span>
+                                <span class="inactive"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code du header récupéré ici = http://codepen.io/jordanlachance/pen/QNMwBg -->
+        <!-- Le header.js était déjà codé -->
+        <script type="text/javascript" src="assets/vendor/header.js"></script>
 </body>
 
 </html>
