@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="172.223px" height="161.111px" viewBox="0 0 172.223 161.111" enable-background="new 0 0 172.223 161.111"
+	 xml:space="preserve">
+<g id="Calque_2" display="none">
+	<rect x="-84.389" y="-69.445" display="inline" stroke="#F5F5F5" stroke-miterlimit="10" width="333" height="284"/>
+</g>
+<g id="Calque_1">
+	<g id="triangle">
+		<polygon fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" points="162.334,17.469 88.514,145.329 
+			14.694,17.469 		"/>
+	</g>
+	<g id="carre">
+		
+			<rect x="46.09" y="17.469" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" width="85.142" height="85.142"/>
+	</g>
+	<g id="cercle">
+		<circle fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" cx="88.66" cy="60.04" r="42.57"/>
+	</g>
+	<g id="lettreA">
+		<g>
+			<path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M78.533,81.779h-3.437l19.855-44.025h3.835l19.949,44.024
+				h-3.835l-6.507-14.777H88.722l0.951-2.772h17.523L96.672,40.278L78.533,81.779z"/>
+		</g>
+	</g>
+	<g id="lettreT">
+		<g>
+			<path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M93.906,37.958v2.763l-15.865,0.002l0.009,41.126h-3.401
+				l-0.007-41.125l-15.542,0.003v-2.763L93.906,37.958z"/>
+		</g>
+	</g>
+</g>
+</svg>
